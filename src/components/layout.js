@@ -4,10 +4,10 @@ import { Nav } from "./Nav"
 
 const Layout = ({ children }) => {
   return (
-    <div className="max-w-screen-xl">
-      {/* <Nav /> */}
-      {children}
-    </div>
+    <>
+      <Nav />
+      <div className="max-w-screen-xl">{children}</div>
+    </>
   )
 }
 
