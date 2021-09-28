@@ -1,11 +1,81 @@
+const theme = require("tailwindcss")
+
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}'],
-   darkMode: false, // or 'media' or 'class'
-   theme: {
-     extend: {},
-   },
-   variants: {
-     extend: {},
-   },
-   plugins: [],
- }
+  purge: ["./src/**/*.{js,jsx,ts,tsx}"],
+  darkMode: false, // or 'media' or 'class'
+  variants: {
+    extend: {},
+  },
+  plugins: [],
+  theme: {
+    ...theme,
+    colors: {
+      blue: {
+        DEFAULT: "#141B3E",
+        50: "#C0C7EB",
+        100: "#A3ADE1",
+        200: "#697ACF",
+        300: "#394DB2",
+        400: "#273478",
+        500: "#141B3E",
+        600: "#101632",
+        700: "#0D1127",
+        800: "#090C1B",
+        900: "#050710",
+      },
+      orange: {
+        DEFAULT: "#E47E55",
+        50: "#FFFFFF",
+        100: "#FFFFFF",
+        200: "#F9E2D9",
+        300: "#F2C1AD",
+        400: "#EB9F81",
+        500: "#E47E55",
+        600: "#DD5D29",
+        700: "#B6491D",
+        800: "#8A3716",
+        900: "#5E260F",
+      },
+      yellow: {
+        DEFAULT: "#F4C063",
+        50: "#FFFFFF",
+        100: "#FFFFFF",
+        200: "#FEFAF2",
+        300: "#FBE6C2",
+        400: "#F7D393",
+        500: "#F4C063",
+        600: "#F1AD33",
+        700: "#E19610",
+        800: "#B1760D",
+        900: "#825709",
+      },
+      gray: {
+        DEFAULT: "#75767B",
+        50: "#EAEAEB",
+        100: "#DDDDDF",
+        200: "#C3C4C6",
+        300: "#A9AAAD",
+        400: "#8F9094",
+        500: "#75767B",
+        600: "#5C5D61",
+        700: "#434447",
+        800: "#2A2B2D",
+        900: "#121212",
+      },
+      red: {
+        DEFAULT: "#EB5454",
+        50: "#FFFFFF",
+        100: "#FFFFFF",
+        200: "#FBDDDD",
+        300: "#F6AFAF",
+        400: "#F08282",
+        500: "#EB5454",
+        600: "#E62626",
+        700: "#C21717",
+        800: "#951111",
+        900: "#670C0C",
+      },
+      white: "#ffffff",
+    },
+  },
+}

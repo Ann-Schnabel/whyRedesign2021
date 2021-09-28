@@ -1,14 +1,18 @@
 import React from "react"
 
+const isBrowser = typeof window !== "undefined"
+
 const useWindowWidth = () => {
-  const [width, setWidth] = React.useState(window.innerWidth)
+  const [width, setWidth] = React.useState(null)
 
   const handleResize = () => setWidth(window.innerWidth)
 
   React.useEffect(() => {
-    window.addEventListener("resize", handleResize)
-    return () => {
+    if (isBrowser) {
       window.addEventListener("resize", handleResize)
+      return () => {
+        window.addEventListener("resize", handleResize)
+      }
     }
   })
 
