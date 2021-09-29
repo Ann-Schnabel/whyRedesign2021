@@ -1,12 +1,13 @@
 import React from "react"
 
 import { Nav } from "./Nav"
+import { Box } from "./StyledSystem"
 
 const Layout = ({ children }) => {
   return (
     <>
       <Nav />
-      <div className="max-w-screen-xl">{children}</div>
+      <main>{children}</main>
     </>
   )
 }

@@ -11,15 +11,32 @@ const IndexPage = () => (
   <Layout>
     <Box
       id="heroSection"
-      height="100vh"
+      minHeight="100vh"
       width="100vw"
       backgroundColor="#131B41"
       backgroundImage={`url(${BackgroundTop}), url(${BackgroundMiddle}), url(${BackgroundBottom})`}
       backgroundRepeat="no-repeat"
       backgroundSize="cover"
       position="relative"
+      display="flex"
+      flexDirection="column"
+      justifyContent="center"
     >
-      <h1>HELLO WORLD</h1>
+      <Box
+        maxWidth="1150px"
+        mx="auto"
+        pt={["50px", null, null, "150px"]}
+        pb="100px"
+        px={["10px", null, "50px", "25px"]}
+      >
+        <h1 className="text-white mb-12">
+          Your carefully crafted <br />business model. <br />
+          <span id="h1span">
+            Now for <em>everyone.</em>
+          </span>
+        </h1>
+        <p className="text-white">This is dummy text.</p>
+      </Box>
     </Box>
   </Layout>
 )

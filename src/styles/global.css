@@ -2,6 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-.rotatedLogo {
-    transform: rotate(-12deg);
+.bg-transition {
+  transition: background-color 1s ease;
+}
+
+h1 {
+  font-family: "noto sans display", "sans-serif";
+  font-size: 2rem;
+  line-height: 3.5rem;
+  font-weight: 800;
+  text-align: left;
+}
+
+#h1span {
+  font-weight: 300;
+}
+
+p {
+  font-family: "source sans pro", "sans-serif";
+  font-size: 1rem;
+}
+
+.box-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (min-width: 700px) {
+  h1 {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  h1 {
+    font-size: 5.6rem;
+    line-height: 8rem;
+  }
 }

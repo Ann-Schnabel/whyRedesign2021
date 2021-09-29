@@ -3,7 +3,7 @@ import React from "react"
 const isBrowser = typeof window !== "undefined"
 
 const useWindowWidth = () => {
-  const [width, setWidth] = React.useState(null)
+  const [width, setWidth] = React.useState(isBrowser && window.innerWidth)
 
   const handleResize = () => setWidth(window.innerWidth)
 

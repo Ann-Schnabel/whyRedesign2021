@@ -9,6 +9,11 @@ module.exports = {
   plugins: [],
   theme: {
     ...theme,
+    fontFamily: {
+      sans: ["Source Sans Pro", "sans-serif"],
+      display: ["noto sans display", "Source Sans Pro", "sans-serif"],
+      body: ["Source Sans Pro", "sans-serif"],
+    },
     colors: {
       blue: {
         DEFAULT: "#141B3E",
