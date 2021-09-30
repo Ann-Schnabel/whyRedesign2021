@@ -2,8 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-transition {
+/* .bg-transition {
   transition: background-color 1s ease;
+} */
+
+.fixedMobileNav {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.navContainer {
+  justify-content: center;
 }
 
 h1 {
@@ -20,11 +32,25 @@ h1 {
 
 p {
   font-family: "source sans pro", "sans-serif";
-  font-size: 1rem;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  max-width: 450px;
 }
 
 .box-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (min-width: 600px) {
+  .fixedMobileNav {
+    position: static;
+    margin: inherit;
+  }
+
+  .navContainer {
+    justify-content: space-between;
+  }
+  
 }
 
 @media only screen and (min-width: 700px) {

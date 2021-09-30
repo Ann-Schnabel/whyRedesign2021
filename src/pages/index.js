@@ -21,21 +21,27 @@ const IndexPage = () => (
       display="flex"
       flexDirection="column"
       justifyContent="center"
+      pt="90px"
     >
       <Box
         maxWidth="1150px"
         mx="auto"
-        pt={["50px", null, null, "150px"]}
+        pt={[null, null, null, "25px"]}
         pb="100px"
-        px={["10px", null, "50px", "25px"]}
+        px={["25px", null, "50px", "25px"]}
       >
         <h1 className="text-white mb-12">
-          Your carefully crafted <br />business model. <br />
+          Your carefully crafted <br />
+          business model. <br />
           <span id="h1span">
             Now for <em>everyone.</em>
           </span>
         </h1>
-        <p className="text-white">This is dummy text.</p>
+        <p className="text-white max-w-4">
+          We Hear You is an accessibility company with a passion for technology.
+          We find innovative solutions to problems that have impacted many
+          individuals for far too long.
+        </p>
       </Box>
     </Box>
   </Layout>
